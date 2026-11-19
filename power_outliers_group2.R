@@ -212,4 +212,4 @@ colnames(power_results) <- c("mu", "sigma", "m", "lambda", "n1", "n2", "t-test",
 power_results
 
 # Save the final data frame to a CSV file
-write.csv(power_results, file = "D:/Thesis/Thesis_amm/thesis and peper/JSCT_manuscript/Result_151169/power_outlier_n1=n2_try.csv", row.names = FALSE)
+write.csv(power_results, file = "D:/Thesis/Thesis_amm/thesis and peper/JSCT_manuscript/Result_151169/power_outlier_n1=n2.csv", row.names = FALSE)

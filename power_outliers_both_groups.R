@@ -74,8 +74,8 @@ M     <- 5000
 for (n1 in c(5, 7, 8, 10, 12, 15, 20, 25, 50, 100, 200, 500)) {
   for (m in c(1, 9)) {
     for (lambda in c(0, 9)) {
-      #n2   <- n1
-      n2 <- round(1.2*n1)
+      n2   <- n1
+      #n2 <- round(1.2*n1)
       
       dalta <- lambda/(sqrt(1+(lambda^2)))
       mean <- mu+(sigma*dalta*sqrt(2/pi))
@@ -223,6 +223,6 @@ colnames(power_results) <- c("mu", "sigma", "m", "lambda", "n1", "n2", "t-test",
 power_results
 
 # Save the final data frame to a CSV file
-write.csv(power_results, file = "D:/Thesis/Thesis_amm/thesis and peper/JSCT_manuscript/Result_151169/power_outlier2_n1!=n2.csv", row.names = FALSE)
+write.csv(power_results, file = "D:/Thesis/Thesis_amm/thesis and peper/JSCT_manuscript/Result_151169/power_outlier2_n1=n2.csv", row.names = FALSE)
 
         
